@@ -1,12 +1,11 @@
 
-import React from 'react'
+
 import "./slider.css"
 import { useInView } from 'react-intersection-observer';
 
 const Slider = ({ imgSrc, title, subTitle, flipped }) => {
 
     const { ref, inView, entry } = useInView({
-        /* Optional options */
         threshold: 0.4,
     });
 
